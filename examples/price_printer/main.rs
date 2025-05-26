@@ -6,6 +6,7 @@ use std::{env, str::FromStr};
 
 use clap::Parser;
 use futures::{future::select_all, StreamExt};
+// use hex;
 use tokio::{sync::mpsc, task::JoinHandle};
 use tycho_client::feed::component_tracker::ComponentFilter;
 use tycho_common::models::Chain;
@@ -122,6 +123,10 @@ async fn main() {
             None,
         )
         .await;
+        // println!("Tokens loaded: {num}", num = all_tokens.len());
+        // for (addr, token) in &all_tokens {
+        //     println!("Token address: 0x{}, symbol: {}", hex::encode(addr), token.symbol);
+        // }
         let tvl_filter = ComponentFilter::with_tvl_range(cli.tvl_threshold, cli.tvl_threshold);
         let mut protocol_stream =
             register_exchanges(ProtocolStreamBuilder::new(&tycho_url, chain), &chain, tvl_filter)
