@@ -87,7 +87,9 @@ impl Cli {
             self.buy_token = Some(match self.chain.as_str() {
                 "ethereum" => "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2".to_string(),
                 "base" => "0x4200000000000000000000000000000000000006".to_string(),
-                "unichain" => "0x4200000000000000000000000000000000000006".to_string(),
+                // Default to Native ETH for Unichain
+                // "unichain" => "0x4200000000000000000000000000000000000006".to_string(),
+                "unichain" => "0x0000000000000000000000000000000000000000".to_string(),
                 _ => panic!("Execution does not yet support chain {chain}", chain = self.chain),
             });
         }
@@ -202,8 +204,8 @@ async fn main() {
         }
         Chain::Unichain => {
             protocol_stream = protocol_stream
-                .exchange::<UniswapV2State>("uniswap_v2", tvl_filter.clone(), None)
-                .exchange::<UniswapV3State>("uniswap_v3", tvl_filter.clone(), None)
+                // .exchange::<UniswapV2State>("uniswap_v2", tvl_filter.clone(), None)
+                // .exchange::<UniswapV3State>("uniswap_v3", tvl_filter.clone(), None)
                 .exchange::<UniswapV4State>(
                     "uniswap_v4",
                     tvl_filter.clone(),
@@ -538,6 +540,7 @@ fn get_best_swap(
                     .get_amount_out(amount_in.clone(), &sell_token, &buy_token)
                     .map_err(|e| eprintln!("Error calculating amount out for Pool {id:?}: {e:?}"))
                     .ok();
+                println!("Pool {id:?}");
                 if let Some(amount_out) = amount_out {
                     amounts_out.insert(id.clone(), amount_out.amount);
                 }
