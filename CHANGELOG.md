@@ -1,3 +1,56 @@
+## [0.103.1](https://github.com/propeller-heads/tycho-simulation/compare/0.103.0...0.103.1) (2025-05-29)
+
+
+### Bug Fixes
+
+* temporarily disable maverick v2 ([02694fb](https://github.com/propeller-heads/tycho-simulation/commit/02694fbb05b4ac92c7a213f55a68949b6e22f525))
+
+## [0.103.0](https://github.com/propeller-heads/tycho-simulation/compare/0.102.0...0.103.0) (2025-05-27)
+
+
+### Features
+
+* Update quickstart to sign the permit object itself ([73a21b0](https://github.com/propeller-heads/tycho-simulation/commit/73a21b07bd94665a2de750189cd612a1e20edc96))
+* Update quickstart with new encoders ([bbae67a](https://github.com/propeller-heads/tycho-simulation/commit/bbae67a18b61db75fdb79498fe0a3240fbcdcacd))
+* Update tycho-execution and quickstart ([cc41536](https://github.com/propeller-heads/tycho-simulation/commit/cc415365d5c152b90dccbcb9cc7bcd343917f092))
+* update tycho-execution version ([6939613](https://github.com/propeller-heads/tycho-simulation/commit/693961396d39b2d868207ee753da4e56448697db))
+* Update tycho-execution version ([aa04d06](https://github.com/propeller-heads/tycho-simulation/commit/aa04d06338dbd75760ae65e92412736f43d99211))
+* Update tycho-execution version, add maverick stream ([d0588f8](https://github.com/propeller-heads/tycho-simulation/commit/d0588f81d0f40ca4a7c3357636afb8bfde2ce847))
+* Upgrade tycho execution ([fdf62d5](https://github.com/propeller-heads/tycho-simulation/commit/fdf62d5b37ba01d833cef01e23aa931b98613a7c))
+
+
+### Bug Fixes
+
+* Don't use encode_input from tycho-execution ([641df02](https://github.com/propeller-heads/tycho-simulation/commit/641df02539c4cb7c83335b6b023e449d2ea4f2bf))
+* **quickstart:** Support checking ETH balance not only ERC20 tokens ([04cc953](https://github.com/propeller-heads/tycho-simulation/commit/04cc953a04c4517be4bf765f773b36a38552fef5))
+
+## [0.102.0](https://github.com/propeller-heads/tycho-simulation/compare/0.101.2...0.102.0) (2025-05-27)
+
+
+### Features
+
+* Add maverickV2 runtime and include it on examples ([7b442ec](https://github.com/propeller-heads/tycho-simulation/commit/7b442ec920cc0adb6ca7f28c59ad41869857288d))
+* merge main ([4d87ec3](https://github.com/propeller-heads/tycho-simulation/commit/4d87ec3ca01c2f81234e4b89cd5d62cba4f0925d))
+
+
+### Bug Fixes
+
+* formatting ([3955924](https://github.com/propeller-heads/tycho-simulation/commit/3955924b08cef4cc70bd98db68d797d00003f0cf))
+
+## [0.101.2](https://github.com/propeller-heads/tycho-simulation/compare/0.101.1...0.101.2) (2025-05-27)
+
+
+### Bug Fixes
+
+* set base default 'last active' token filter to 1 day ([7d123d3](https://github.com/propeller-heads/tycho-simulation/commit/7d123d37bd01d1b4ff49dfd170f9e96cfb58c8ed))
+
+## [0.101.1](https://github.com/propeller-heads/tycho-simulation/compare/0.101.0...0.101.1) (2025-05-26)
+
+
+### Bug Fixes
+
+* improve solidity utils checks and errors ([dfb19f2](https://github.com/propeller-heads/tycho-simulation/commit/dfb19f2db82896c07b328af5e1d448a153140b98))
+
 ## [0.101.0](https://github.com/propeller-heads/tycho-simulation/compare/0.100.1...0.101.0) (2025-05-19)
 
 
